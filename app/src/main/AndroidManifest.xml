@@ -3,7 +3,7 @@
 
     <application
         android:label="Конвертер величин"
-        android:theme="@android:style/Theme.Material.Light">
+        android:theme="@android:style/Theme.Material">
 
         <!-- Главное окно, открывается при запуске -->
         <activity

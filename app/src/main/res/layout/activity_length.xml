@@ -11,41 +11,90 @@
         android:text="Длина"
         android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/editNumber"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint="Введите число"
-        android:inputType="numberDecimal|numberSigned" />
+        android:layout_marginTop="8dp"
+        android:text="Введите число в любой квадратик" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <Button
+        <EditText
+            android:id="@+id/editCm"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="см → м"
-            android:onClick="cmToM" />
+            android:background="@drawable/box"
+            android:inputType="numberDecimal|numberSigned" />
 
-        <Button
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="см"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editM"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="м → см"
-            android:onClick="mToCm" />
+            android:layout_marginStart="16dp"
+            android:background="@drawable/box"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="м"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textResult"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Результат"
-        android:textSize="20sp" />
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editDm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/box"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="дм"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editKm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/box"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="км"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
 </LinearLayout>
